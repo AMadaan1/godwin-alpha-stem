@@ -21,6 +21,15 @@ window.addEventListener('mousemove', function(event) {
     }
 });
 
+// Add touch support for mobile
+window.addEventListener('touchmove', function(event) {
+    mouse.x = event.touches[0].clientX;
+    mouse.y = event.touches[0].clientY;
+    for (let i = 0; i < 2; i++) {
+        particlesArray.push(new Particle());
+    }
+});
+
 // Handle window resize
 window.addEventListener('resize', function() {
     canvas.width = window.innerWidth;
