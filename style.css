@@ -292,7 +292,6 @@ footer {
     left: 0;
     width: 100%;
     height: 100%;
-    background: var(--bg-dark);
 }
 .glitch::before {
     left: 2px;
@@ -321,24 +320,6 @@ footer {
     60% { clip: rect(25px, 9999px, 85px, 0); }
     80% { clip: rect(95px, 9999px, 15px, 0); }
     100% { clip: rect(40px, 9999px, 70px, 0); }
-}
-
-/* Mobile Responsiveness */
-@media (max-width: 768px) {
-    nav {
-        flex-direction: column;
-        padding: 15px;
-        gap: 15px;
-    }
-    .nav-links a {
-        margin: 0 10px;
-    }
-    .about-grid {
-        grid-template-columns: 1fr; /* Stacks the text and stats on top of each other */
-    }
-    .hero-content h1 {
-        font-size: 3rem;
-    }
 }
 
 html {
